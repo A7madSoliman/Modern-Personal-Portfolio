@@ -6,6 +6,7 @@ import {
   Linkedin,
   Twitter,
   Download,
+  X,
 } from "lucide-react";
 import { AnimatedBorderButton } from "@/components/AnimatedBorderButton/AnimatedBorderButton";
 import { Button } from "@/components/Button/Button";
@@ -38,7 +39,7 @@ export const Hero: React.FC = () => {
       icon: Linkedin,
       href: "https://www.linkedin.com/in/ahmed-soliman-1334b116a/",
     },
-    { icon: Twitter, href: "https://x.com/A7madSoliman92" },
+    { icon: X, href: "https://x.com/A7madSoliman92" },
   ];
 
   return (
@@ -96,9 +97,10 @@ export const Hero: React.FC = () => {
                 </span>
               </h1>
               <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
-                Hi, I&apos;m Ahmad Soliman — a software engineer specializing in
-                React, Next.js, and TypeScript. I build scalable, performant web
-                applications that users love.
+                Hi, I’m Ahmad Soliman — a software engineer specializing in
+                React, Next.js, and TypeScript. I build scalable,
+                high-performance web applications with a strong focus on clean
+                architecture and great user experience.
               </p>
             </div>
 
@@ -110,7 +112,12 @@ export const Hero: React.FC = () => {
                 </Button>
               </a>
 
-              <a href="">
+              <a
+                href="/cv/AHMED-SOLIMAN-CV.pdf"
+                download="AHMED-SOLIMAN-CV.pdf"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <AnimatedBorderButton>
                   <Download className="w-5 h-5" />
                   Download CV
@@ -126,6 +133,8 @@ export const Hero: React.FC = () => {
                 <a
                   key={idx}
                   href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300"
                 >
                   <social.icon className="w-5 h-5" />

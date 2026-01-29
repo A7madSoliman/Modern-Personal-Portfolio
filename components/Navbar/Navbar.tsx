@@ -38,7 +38,11 @@ export default function Navbar() {
           href="#"
           className="text-xl font-bold tracking-tight hover:text-primary"
         >
-          AS <span className="text-primary">.</span>
+          <img
+            src="/icon.png"
+            alt="AS Logo"
+            className="h-18 w-18 object-contain"
+          />
         </a>
 
         {/* Desktop Nav */}

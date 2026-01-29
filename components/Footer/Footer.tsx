@@ -26,7 +26,11 @@ export default function Footer() {
           {/* Logo & Copyright */}
           <div className="text-center md:text-left">
             <a href="#" className="text-xl font-bold tracking-tight">
-              AS<span className="text-primary">.</span>
+              <img
+                src="/icon.png"
+                alt="AS Logo"
+                className="h-18 w-18 object-contain"
+              />
             </a>
             <p className="text-sm text-muted-foreground mt-2">
               © {currentYear} Pedro Machado. All rights reserved.
@@ -53,6 +57,8 @@ export default function Footer() {
                 key={social.label}
                 href={social.href}
                 aria-label={social.label}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all"
               >
                 <social.icon className="w-5 h-5" />

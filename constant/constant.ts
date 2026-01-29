@@ -7,8 +7,8 @@ import {
   MapPin,
   Phone,
   Rocket,
-  Twitter,
   Users,
+  X,
 } from "lucide-react";
 
 export const navlinks = [
@@ -173,7 +173,7 @@ export const contactInfo = [
   {
     icon: MapPin,
     label: "Location",
-    value: "Egypt, CAI",
+    value: "Egy, Cairo",
     href: "#",
   },
 ];
@@ -194,15 +194,14 @@ export const footerLinks = [
     href: "#experience",
     label: "Experience",
   },
-  {
-    id: 4,
-    href: "#contact",
-    label: "Contact",
-  },
 ];
 
 export const socialLinks = [
-  { icon: Github, href: "#", label: "GitHub" },
-  { icon: Linkedin, href: "#", label: "LinkedIn" },
-  { icon: Twitter, href: "#", label: "Twitter" },
+  { icon: Github, href: "https://github.com/A7madSoliman", label: "GitHub" },
+  {
+    icon: Linkedin,
+    href: "https://www.linkedin.com/in/ahmed-soliman-1334b116a/",
+    label: "LinkedIn",
+  },
+  { icon: X, href: "https://x.com/A7madSoliman92", label: "Twitter" },
 ];
