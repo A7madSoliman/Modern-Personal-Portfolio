@@ -32,30 +32,28 @@ export default function About() {
 
             <div className="space-y-4 text-muted-foreground animate-fade-in animation-delay-200">
               <p>
-                I'm a passionate software engineer with over 5 years of
-                experience crafting digital products that make a difference. My
-                journey started with a curiosity for how things work on the web,
-                and it has evolved into a deep expertise in modern frontend
-                technologies.
+                I’m a Front-End Developer with 2+ years of experience building
+                responsive, user-focused web applications. I enjoy turning
+                complex requirements into clean, scalable UI that feels fast and
+                intuitive.
               </p>
               <p>
-                I specialize in React, Next.js, and TypeScript, building
-                everything from sleek landing pages to complex enterprise
-                applications. My approach combines technical excellence with a
-                keen eye for design and user experience.
+                I specialize in React, Next.js, and TypeScript, and I’ve built
+                production-style e-commerce apps featuring authentication,
+                protected routes, cart & wishlist flows, checkout, and API
+                integrations—focused on performance and maintainability.
               </p>
               <p>
-                When I'm not coding, you'll find me exploring new technologies,
-                contributing to open-source projects, or sharing knowledge with
-                the developer community.
+                I care about clean architecture, reusable components, and smooth
+                UX. I’m always improving my craft by learning modern best
+                practices and shipping real projects.
               </p>
             </div>
 
             <div className="glass rounded-2xl p-6 glow-border animate-fade-in animation-delay-300">
               <p className="text-lg font-medium italic text-foreground">
-                "My mission is to create digital experiences that are not just
-                functional, but truly delightful — products that users love to
-                use and developers love to maintain."
+                "I build fast, reliable interfaces—clean code, great UX, and
+                products that scale."
               </p>
             </div>
           </div>

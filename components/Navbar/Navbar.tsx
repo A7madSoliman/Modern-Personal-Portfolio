@@ -6,16 +6,16 @@ import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 
 type NavLink = {
-  id: string | number;
+  id: number | string;
+  href: string;
   label: string;
-  url: string;
 };
 
 export default function Navbar() {
-  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
-  const links = navlinks as NavLink[];
+  const links: NavLink[] = navlinks;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -47,8 +47,8 @@ export default function Navbar() {
             {links.map((link) => (
               <a
                 key={link.id}
-                href={link.url}
-                className="px-4 py-2 text-sm text-muted-foreground hover:text-foreground rounded-full hover:bg-surface"
+                href={link.href}
+                className="px-4 py-2 text-sm text-muted-foreground hover:text-foreground rounded-full hover:bg-surface font-bold uppercase"
               >
                 {link.label}
               </a>
@@ -58,9 +58,11 @@ export default function Navbar() {
 
         {/* CTA Button */}
         <div className="hidden md:block">
-          <Button size="sm" type="button">
-            Contact Me
-          </Button>
+          <a href="#contact">
+            <Button size="sm" type="button">
+              Contact Me
+            </Button>
+          </a>
         </div>
 
         {/* Mobile Menu Button */}
@@ -82,14 +84,13 @@ export default function Navbar() {
             {links.map((link) => (
               <a
                 key={link.id}
-                href={link.url}
+                href={link.href}
                 onClick={() => setIsMenuOpen(false)}
                 className="text-lg text-muted-foreground hover:text-foreground py-2"
               >
                 {link.label}
               </a>
             ))}
-
             <Button type="button">Contact Me</Button>
           </div>
         </div>

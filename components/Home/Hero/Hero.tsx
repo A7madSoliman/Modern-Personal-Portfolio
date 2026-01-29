@@ -33,12 +33,12 @@ type SocialItem = {
 
 export const Hero: React.FC = () => {
   const socials: SocialItem[] = [
-    { icon: Github, href: "#" },
+    { icon: Github, href: "https://github.com/A7madSoliman" },
     {
       icon: Linkedin,
       href: "https://www.linkedin.com/in/ahmed-soliman-1334b116a/",
     },
-    { icon: Twitter, href: "#" },
+    { icon: Twitter, href: "https://x.com/A7madSoliman92" },
   ];
 
   return (
@@ -104,14 +104,18 @@ export const Hero: React.FC = () => {
 
             {/* CTAs */}
             <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
-              <Button size="lg">
-                Contact Me <ArrowRight className="w-5 h-5" />
-              </Button>
+              <a href="#contact">
+                <Button size="lg">
+                  Contact Me <ArrowRight className="w-5 h-5" />
+                </Button>
+              </a>
 
-              <AnimatedBorderButton>
-                <Download className="w-5 h-5" />
-                Download CV
-              </AnimatedBorderButton>
+              <a href="">
+                <AnimatedBorderButton>
+                  <Download className="w-5 h-5" />
+                  Download CV
+                </AnimatedBorderButton>
+              </a>
             </div>
 
             {/* Social Links */}

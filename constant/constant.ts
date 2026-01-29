@@ -1,25 +1,31 @@
-import { Code2, Lightbulb, Rocket, Users } from "lucide-react";
+import {
+  Code2,
+  Github,
+  Lightbulb,
+  Linkedin,
+  Mail,
+  MapPin,
+  Phone,
+  Rocket,
+  Twitter,
+  Users,
+} from "lucide-react";
 
 export const navlinks = [
   {
     id: 1,
-    url: "#about",
+    href: "#about",
     label: "About",
   },
   {
     id: 2,
-    url: "#projects",
+    href: "#projects",
     label: "Projects",
   },
   {
     id: 3,
-    url: "#experience",
+    href: "#experience",
     label: "Experience",
-  },
-  {
-    id: 4,
-    url: "#testimonials",
-    label: "Testimonials",
   },
 ];
 
@@ -51,78 +57,152 @@ export const highlights = [
 
 export const projects = [
   {
-    title: "Fintech Dashboard",
+    title: "E-Commerce Platform",
     description:
-      "A comprehensive financial analytics platform with real-time data visualization, portfolio management, and AI-powered insights.",
+      "I built a full-featured e-commerce web application from scratch using React, TypeScript, Vite, and React Query. The goal was to simulate a real-world online store with best-practice.",
     image: "/projects/project1.png",
-    tags: ["React", "Typescript", "NodeJS"],
-    link: "#",
-    github: "#",
+    tags: [
+      "React",
+      "Typescript",
+      "Tailwind",
+      "React Query",
+      "JWT",
+      "Axios",
+      "Formik",
+      "Yup ",
+    ],
+    link: "https://final-ecommerce-project-six.vercel.app/",
+    github: "https://github.com/A7madSoliman/Final-Ecommerce-Project",
   },
   {
     title: "E-Commerce Platform",
     description:
-      "A full-featured e-commerce solution with inventory management, payment processing, and analytics dashboard.",
+      "I’m excited to share my project: FreshCart, a modern e-commerce web app built with Next.js featuring a clean UI and smooth user experience.",
     image: "/projects/project2.png",
-    tags: ["Next.js", "Stripe", "PostgreSQL", "Tailwind"],
-    link: "#",
-    github: "#",
+    tags: [
+      "Next.js",
+      "Typescript",
+      "React Query",
+      "Tailwind",
+      "React Hook",
+      "Zod",
+      "Middleware",
+    ],
+    link: "https://freshcart-ecommerce-nextjs.vercel.app/",
+    github: "https://github.com/A7madSoliman/freshcart-ecommerce-next",
   },
   {
-    title: "AI Writing Assistant",
+    title: "Modern Travel Website",
     description:
       "An intelligent writing tool powered by GPT-4, helping users create better content faster.",
     image: "/projects/project3.png",
-    tags: ["React", "OpenAI", "Python", "FastAPI"],
-    link: "#",
-    github: "#",
+    tags: ["React", "Typescript", "Tailwind", "Lucide React (Icons)"],
+    link: "https://static-travel-website.vercel.app/",
+    github: "https://github.com/A7madSoliman/Modern-Travel-Website",
   },
   {
-    title: "Project Management Tool",
+    title: "Movies-App",
     description:
-      "A collaborative workspace for teams with real-time updates, task tracking, and integrations.",
+      "Movies-App helps you discover and explore movies with an intuitive interface, providing key details like ratings and reviews to find your next favorite film.",
     image: "/projects/project4.png",
-    tags: ["Next.js", "Socket.io", "MongoDB", "Redis"],
-    link: "#",
-    github: "#",
+    tags: ["React", "Typescript", "Tailwind"],
+    link: "https://movies-app-ten-plum.vercel.app/",
+    github: "https://github.com/A7madSoliman/Movies-App/tree/master",
   },
 ];
 
 export const experiences = [
   {
-    period: "2022 — Present",
-    role: "Senior Frontend Engineer",
-    company: "Tech Innovators Inc.",
+    period: "2025 — Present",
+    role: "Freelance Frontend Developer",
+    company: "Self-Employed",
     description:
-      "Leading frontend architecture for a suite of fintech products. Implemented micro-frontend architecture, reduced bundle size by 40%, and mentored a team of 5 developers.",
-    technologies: ["React", "TypeScript", "Next.js", "GraphQL"],
+      "Delivered tailored web solutions for small businesses and startups, shipping 10+ responsive websites and web apps from planning and UI implementation to deployment, performance optimization, and ongoing support.",
+    technologies: [
+      "Next.js (App Router)",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "TanStack React Query",
+      "React Hook Form",
+      "Zod",
+      "Next.js Middleware",
+      "REST APIs",
+      "UI/UX",
+      "Git",
+    ],
     current: true,
   },
   {
-    period: "2020 — 2022",
-    role: "Frontend Engineer",
-    company: "Digital Solutions Co.",
+    period: "2024 — 2025",
+    role: "Frontend Engineer Intern",
+    company: "Route Internship",
     description:
-      "Built and maintained multiple React applications for enterprise clients. Introduced automated testing practices that improved code coverage to 85%.",
-    technologies: ["React", "Redux", "Jest", "Cypress"],
+      "Built a production-style e-commerce experience with Next.js (App Router) and TypeScript, implementing authentication flows, protected routes, cart CRUD, wishlist, checkout/payment session, and orders history. Improved UX with React Query caching/mutations, per-action loaders, and consistent UI components.",
+    technologies: [
+      "HTML",
+      "CSS",
+      "Sass",
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "Next.js",
+      "Tailwind CSS",
+      "REST APIs",
+      "UI/UX",
+      "Git",
+      "Vercel",
+    ],
     current: false,
+  },
+];
+
+export const contactInfo = [
+  {
+    icon: Mail,
+    label: "Email",
+    value: "ahmadsoliman283@gmail.com",
+    href: "https://www.linkedin.com/in/ahmed-soliman-1334b116a/",
   },
   {
-    period: "2019 — 2020",
-    role: "Junior Developer",
-    company: "StartUp Labs",
-    description:
-      "Contributed to the development of a SaaS platform from MVP to production. Collaborated with designers to implement pixel-perfect UI components.",
-    technologies: ["React", "Node.js", "MongoDB", "AWS"],
-    current: false,
+    icon: Phone,
+    label: "Phone",
+    value: "+2 01014215587",
+    href: "tel:+201014215587",
   },
   {
-    period: "2018 — 2019",
-    role: "Freelance Developer",
-    company: "Self-Employed",
-    description:
-      "Delivered custom web solutions for small businesses and startups. Built 15+ websites and applications, handling everything from design to deployment.",
-    technologies: ["JavaScript", "PHP", "WordPress", "MySQL"],
-    current: false,
+    icon: MapPin,
+    label: "Location",
+    value: "Egypt, CAI",
+    href: "#",
   },
+];
+
+export const footerLinks = [
+  {
+    id: 1,
+    href: "#about",
+    label: "About",
+  },
+  {
+    id: 2,
+    href: "#projects",
+    label: "Projects",
+  },
+  {
+    id: 3,
+    href: "#experience",
+    label: "Experience",
+  },
+  {
+    id: 4,
+    href: "#contact",
+    label: "Contact",
+  },
+];
+
+export const socialLinks = [
+  { icon: Github, href: "#", label: "GitHub" },
+  { icon: Linkedin, href: "#", label: "LinkedIn" },
+  { icon: Twitter, href: "#", label: "Twitter" },
 ];
