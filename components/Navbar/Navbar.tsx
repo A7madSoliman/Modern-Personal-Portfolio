@@ -29,7 +29,7 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 transition-all duration-500 ${
+      className={`fixed top-0 left-0 right-0 transition-all duration-300 ${
         isScrolled ? "glass-strong py-3" : "bg-transparent py-5"
       }  z-50`}
     >
@@ -52,7 +52,7 @@ export default function Navbar() {
               <a
                 key={link.id}
                 href={link.href}
-                className="px-4 py-2 text-sm text-muted-foreground hover:text-foreground rounded-full hover:bg-surface font-bold uppercase"
+                className="px-4 py-2 text-sm text-muted-foreground hover:text-foreground rounded-full hover:bg-surface font-bold "
               >
                 {link.label}
               </a>
@@ -84,7 +84,7 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {isMenuOpen && (
         <div className="md:hidden glass-strong animate-fade-in">
-          <div className="container mx-auto px-6 py-6 flex flex-col gap-4">
+          <div className="container mx-auto px-6 py-6 flex flex-col gap-4 ">
             {links.map((link) => (
               <a
                 key={link.id}
