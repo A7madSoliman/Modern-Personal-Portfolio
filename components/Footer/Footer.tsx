@@ -20,38 +20,37 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="py-12 border-t border-border">
-      <div className="container mx-auto px-6">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+    <footer className="border-t border-border">
+      <div className="container mx-auto px-4 sm:px-6 py-10 sm:py-12">
+        <div className="flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
           {/* Logo & Copyright */}
-          <div className="text-center md:text-left">
-            <a href="#" className="text-xl font-bold tracking-tight">
+          <div className="flex justify-center items-center text-center md:items-start md:text-left">
+            <a href="#" className="inline-flex items-center gap-3">
               <img
                 src="/icon.png"
                 alt="AS Logo"
-                className="h-18 w-18 object-contain"
+                className="h-12 w-12 sm:h-14 sm:w-14 object-contain"
               />
             </a>
-            <p className="text-sm text-muted-foreground mt-2">
-              © {currentYear} Pedro Machado. All rights reserved.
-            </p>
           </div>
 
           {/* Links */}
-          <nav className="flex flex-wrap justify-center gap-6">
-            {links.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-              >
-                {link.label}
-              </a>
-            ))}
+          <nav className="w-full md:w-auto">
+            <div className="flex items-center justify-center gap-3 sm:gap-4 text-center overflow-x-auto whitespace-nowrap [-webkit-overflow-scrolling:touch] px-1">
+              {links.map((link) => (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors shrink-0"
+                >
+                  {link.label}
+                </a>
+              ))}
+            </div>
           </nav>
 
           {/* Social Links */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center justify-center md:justify-end gap-3 sm:gap-4">
             {socLinks.map((social) => (
               <a
                 key={social.label}
@@ -61,7 +60,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all"
               >
-                <social.icon className="w-5 h-5" />
+                <social.icon className="h-5 w-5" />
               </a>
             ))}
           </div>
